@@ -1,0 +1,33 @@
+# menghitung pendapatan dan pengeluaran budi selama 5 minggu
+# Input 
+gaji_per_jam = float(input("Masukkan gaji per jam (Rp): "))
+jam_per_minggu = float(input("Masukkan jumlah jam kerja per minggu: "))
+
+# 1. Pendapatan sebelum pajak
+total_jam= jam_per_minggu * 5  # 5 minggu
+total_pemasukan = gaji_per_jam * total_jam
+# 2. Pendapatan setelah pajak (14%)
+pajak = 0.14 * total_pemasukan
+pemasukan1 = total_pemasukan - pajak
+
+# 3. Pengeluaran untuk baju dan aksesoris (10%)
+baju_accessories = 0.10 * pemasukan1
+# 4. Pengeluaran untuk alat tulis (1%)
+alat_tulis = 0.01 * pemasukan1
+# Sisa uang setelah pembelian
+sisa_uang = pemasukan1 - baju_accessories - alat_tulis
+# 5. donasi (25% dari sisa_uang)
+donasi = 0.25 * sisa_uang
+# 6. Jumlah untuk anak yatim (30% dari donasi)
+donasi_yatim = 0.30 * donasi
+# 7. Jumlah donasii untuk dhuafa 
+donasi_dhuafa =  donasi - donasi_yatim
+
+# output hasil
+print(f"1. Pendapatan sebelum pajak: Rp{total_pemasukan:,.2f}")
+print(f"2. Pendapatan setelah pajak: Rp{pemasukan1:,.2f}")
+print(f"3. Pengeluaran untuk pakaian dan aksesoris: Rp{baju_accessories:,.2f}")
+print(f"4. Pengeluaran untuk alat tulis: Rp{alat_tulis:,.2f}")
+print(f"5. Jumlah sedekah: Rp{donasi:,.2f}")
+print(f"6. Sedekah untuk anak yatim: Rp{donasi_yatim:,.2f}")
+print(f"7. Sedekah untuk kaum dhuafa: Rp{donasi_dhuafa:,.2f}")
