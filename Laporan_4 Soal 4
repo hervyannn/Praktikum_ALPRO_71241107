@@ -1,0 +1,17 @@
+sisi1 = input("masukkan sisi 1 :")
+sisi2 = input("masukkan sisi 2 :")
+sisi3 = input("masukkan sisi 3 :")
+
+try :
+    sisi1 = int(sisi1)
+    sisi2 = int(sisi2)
+    sisi3 = int(sisi3)
+
+    if sisi1 == sisi2 and sisi1 == sisi3 :
+        print ("ketiga sisi sama")
+    elif sisi1 == sisi2 or sisi1 == sisi3 or sisi2 == sisi3 :
+        print("kedua bilangan sama")
+    else :
+        print ("tidak ada yang sama")
+except ValueError :
+    print("masukkan angka (integer) bg!")
