@@ -1,0 +1,2 @@
+angka = int(input("masukkan angka(integer) :"))
+bilangan = print("bilangan positif") if angka > 0 else print("bilangan negatif") if angka < 0 else print("bilangan nol")
