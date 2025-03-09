@@ -1,0 +1,9 @@
+celcius_to_fahrenheit = lambda c: (9/5) * c + 32
+celcius_to_reamur = lambda c: 0.8 * c
+
+
+test_cases = [100, 80, 0]
+
+for c in test_cases:
+    print(f"Input C = {c}. Output F = {int(celcius_to_fahrenheit(c))}.")
+    print(f"Input C = {c}. Output R = {int(celcius_to_reamur(c))}.")
