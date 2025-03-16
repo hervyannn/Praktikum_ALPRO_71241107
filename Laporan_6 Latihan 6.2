@@ -1,0 +1,22 @@
+def ganjil(b_atas,b_bawah):
+
+    if b_atas>b_bawah:
+        a=b_bawah
+        b=b_atas
+        l=1
+    else:
+        a=b_bawah
+        b=b_atas
+        l=-1
+
+    for i in range(a,b,l):
+        if i % 2 !=0:
+            print(i,end=",")
+        else:
+            print("",end="")
+            
+
+
+ganjil(30,10)
+print("\n")
+ganjil(82,97)
