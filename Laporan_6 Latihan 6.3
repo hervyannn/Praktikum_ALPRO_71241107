@@ -1,0 +1,26 @@
+def indeks_prestasi_semester():
+    print("Program menghitung IPS Mahasiswa \n")
+    matkul = int(input("Berapa jumlah mata kuliah ? :"))
+    i=1
+    ips = 0
+    while i <= matkul:
+        nilai= str(input(f"Nilai MK {i} :"))
+        if nilai == "A":
+            nilai = 12
+        elif nilai =="B":
+            nilai = 9 
+        elif nilai == "C":
+            nilai = 6
+        elif nilai == "D":
+            nilai = 3
+        else:
+            print("JANGAN TENGIL!! Masukkan nilai (A,B,C,D)!!")
+            return
+        
+        ips = ips + nilai
+        i+=1
+
+    print(f"Nilai IPS anda semester ini: {round(ips/(matkul*3),2)}")
+
+
+indeks_prestasi_semester()
