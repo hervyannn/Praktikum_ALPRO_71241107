@@ -1,0 +1,16 @@
+def prima_terdekat (n):
+    
+    for i in range(n , 1, -1):
+        if i==2:
+                return(i)
+
+        for j in range(2, i):
+            if i % j == 1:
+                return(i)
+            else:
+                i=i-1
+        
+    
+
+print (prima_terdekat (21))
+print (prima_terdekat (12))
