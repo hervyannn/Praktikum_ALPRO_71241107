@@ -1,0 +1,15 @@
+def faktorial(n):
+    for i in range(n,0,-1):
+        o=i
+        for j in range(1,i):
+            hasil=j*o
+            o=hasil
+
+        print(o,end=" ")
+        for k in range(i,0,-1):
+            print(k,end=" ")
+
+        print()
+
+
+faktorial(6)
